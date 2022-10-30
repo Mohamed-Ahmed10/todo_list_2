@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>To do list </title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+
+	<form class="form-inline">
+		<div class="row">
+			<div class="col-9">
+				<div class="form-group mx-sm-3 mb-2">
+					<label for="inputPassword2" class="sr-only">Password</label>
+					<input type="text" class="form-control" id="myInput" placeholder="Enter your task" autofocus>
+				</div>
+			</div>
+			<div class="col-3">
+				<button type="submit" class="btn btn-primary mb-2" id="addBtn">Add new task</button>
+			</div>
+		</div>
+	</form>
+
+	<div class="calculations">
+		<div class="taskContainer">
+			<span>All tasks</span>
+			<div class="numOfTasks">0</div>
+		</div>
+		<div class="taskContainer">
+			<span>Completed tasks</span>
+			<div class="numOfFinishedTasks">0</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row" id="tasksPackage">
+		</div>
+	</div>
+
+	<script src="js/main.js"></script>
+</body>
+
+</html>
